@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_gray"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/money"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="icon"
+            android:src="@drawable/baseline_attach_money_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/title"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elegantTextHeight="true"
+            android:letterSpacing="0.2"
+            android:text="@string/financei"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.1"
+            android:layout_marginStart="10dp"
+            android:text="Olá exampleName,\nseja bem-vindo"
+            android:lineHeight="30dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/buttons"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:foregroundGravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcome">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/control"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                app:fabCustomSize="65dp"
+                app:fabSize="normal"
+                app:rippleColor="@color/white_gray"
+                app:borderWidth="0dp"
+                android:clickable="true"
+                android:backgroundTint="@color/white"
+                android:contentDescription="@string/todo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/boxes"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_data_usage_24"
+                tools:ignore="MissingConstraints"
+                android:focusable="true" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/boxes"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                app:fabCustomSize="65dp"
+                app:fabSize="normal"
+                app:rippleColor="@color/white_gray"
+                app:borderWidth="0dp"
+                android:clickable="true"
+                android:backgroundTint="@color/white"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/baseline_account_balance_wallet_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/metas"
+                app:layout_constraintStart_toEndOf="@id/control"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                android:focusable="true" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/metas"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                app:fabCustomSize="65dp"
+                app:fabSize="normal"
+                app:rippleColor="@color/white_gray"
+                app:borderWidth="0dp"
+                android:clickable="true"
+                android:backgroundTint="@color/white"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/baseline_checklist_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/boxes"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                android:focusable="true" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lista de Gastos"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle_shape"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:backgroundTint="@color/white_gray"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/baseline_add_24"
+            android:clickable="true"
+            android:contentDescription="TODO"
+            android:focusable="true" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/count_item"/>
+
+
+</LinearLayout>
