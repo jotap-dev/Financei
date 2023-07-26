@@ -3,4 +3,8 @@
     <string name="financei">Financei</string>
     <string name="todo">TODO</string>
     <string name="adicionar">Adicionar</string>
+    <string name="categoria">Categoria</string>
+    <string name="valor_r">Valor (R$)</string>
+    <string name="adicionaruppercase">ADICIONAR</string>
+    <string name="adicionar_gasto">ADICIONAR GASTO</string>
 </resources>

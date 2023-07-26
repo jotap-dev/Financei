@@ -149,6 +149,7 @@
             android:layout_centerVertical="true"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_new_count"
             android:layout_width="140dp"
             android:layout_height="60dp"
             android:background="@drawable/circle_shape"

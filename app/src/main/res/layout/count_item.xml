@@ -13,26 +13,32 @@
 
 
             <TextView
+                android:id="@+id/count_category"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="20dp"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
+                android:paddingLeft="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/count_price"
                 android:letterSpacing="0.1"
-                android:text="Alimento" />
+                android:text="Alimento"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/count_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_marginEnd="80dp"
                 android:text="R$20.00"
-                android:textSize="16sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/count_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="20/12/2022"

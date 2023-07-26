@@ -6,12 +6,12 @@
         <type value="RUNNING_DEVICE_TARGET" />
         <deviceKey>
           <Key>
-            <type value="SERIAL_NUMBER" />
-            <value value="RX8T901VFGR" />
+            <type value="VIRTUAL_DEVICE_PATH" />
+            <value value="C:\Users\evilt\.android\avd\Pixel_5_API_33.avd" />
           </Key>
         </deviceKey>
       </Target>
     </runningDeviceTargetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2023-07-23T05:01:55.076535200Z" />
+    <timeTargetWasSelectedWithDropDown value="2023-07-26T04:47:36.762347700Z" />
   </component>
 </project>
