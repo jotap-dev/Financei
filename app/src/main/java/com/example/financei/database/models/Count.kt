@@ -6,6 +6,8 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "gastos")
 data class Count(
-    @PrimaryKey @ColumnInfo val price: Double,
-    @ColumnInfo val category: String
+    @PrimaryKey(autoGenerate = true) val id: Int,
+    @ColumnInfo val price: Double,
+    @ColumnInfo val category: String,
+    @ColumnInfo val date: String
 )

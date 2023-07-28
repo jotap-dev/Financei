@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:letterSpacing="0.1"
             android:layout_marginStart="10dp"
-            android:text="Olá exampleName,\nseja bem-vindo"
+            android:text="Olá João Pedro,\nseja bem-vindo"
             android:lineHeight="30dp"
             android:textAlignment="textStart"
             android:textColor="@color/black"
